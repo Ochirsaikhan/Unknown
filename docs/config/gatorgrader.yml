@@ -1,0 +1,21 @@
+---
+name: cmpsc-100-course-project-docs
+break: true
+indent: 4
+---
+
+0_idea.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 100
+
+1_progress.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountMarkdownTags --tag "list" --count 2
+    CountFileWords --count 200
+
+2_final-report.md:
+    ConfirmFileExists
+    MatchFileFragment --fragment "TODO" --count 0 --exact
+    CountFileWords --count 300

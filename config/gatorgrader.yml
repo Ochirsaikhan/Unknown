@@ -1,0 +1,7 @@
+---
+name: cmpsc-100-course-project
+break: true
+indent: 4
+---
+
+CountCommits --count 10

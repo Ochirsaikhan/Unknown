@@ -1,0 +1,15 @@
+---
+name: cmpsc-100-course-project-code
+break: true
+indent: 4
+---
+
+main.py:
+    ConfirmFileExists
+    MatchFileFragment --fragment "def " --count 1
+    MatchFileRegex --regex "while|for" --count 1
+    MatchFileFragment --fragment "import" --count 1
+    CountSingleLineComments --language Python --count 15
+    
+
+ExecuteCommand --command "python3 main.py < inputs"
