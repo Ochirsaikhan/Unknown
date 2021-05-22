@@ -21,7 +21,9 @@ n = random.randint(1, 2)
 #I'm using only landscape images because portrait images make the font size smaller since the font size is calculated by the width of an image.
 #If the n == 1, the program will request the first page, which has 30 landscape images in it.
 #If the n == 2, the program will request the second page which has 21 landscape images in it.
-response = requests.get(f"https://api.unsplash.com/collections/1977302/photos/?client_id={api_key.my_key}&per_page=30&page={n}&orientation=landscape")
+# You should use your UNSPLASH API key in the "?client_id = {YOUR-UNSPLASH-API-KEY}" section.
+unsplash_api_key = api_key.my_key
+response = requests.get(f"https://api.unsplash.com/collections/1977302/photos/?client_id={unsplash_api_key}&per_page=30&page={n}&orientation=landscape")
 
 image_json = response.json()
 
