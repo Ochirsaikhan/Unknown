@@ -10,7 +10,7 @@ import random
 import api_key
 
 # Prepares the markovify model.
-file = open("../data/quotes.txt")
+file = open("inputs")
 model = markovify.NewlineText(file)
 
 # Random integer between 1 and 2.
