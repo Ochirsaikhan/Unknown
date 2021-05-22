@@ -147,6 +147,7 @@ gradle
 # Python #
 ######################
 
+api_key.py
 __pycache__/
 *.py[cod]
 *$py.class
