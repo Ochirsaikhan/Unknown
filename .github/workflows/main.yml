@@ -8,6 +8,8 @@
     grade:
       runs-on: ubuntu-latest
       steps:
+      - shell: bash
+        UNSPLASH_API_KEY:  ${{secrets.UNSPLASH_API_KEY}}
       - uses: actions/checkout@v2
         with: 
           fetch-depth: '0'
