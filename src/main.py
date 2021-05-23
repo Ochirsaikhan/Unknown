@@ -7,7 +7,6 @@ import markovify
 import requests
 from io import BytesIO
 import random
-import api_key
 
 # Prepares the markovify model.
 file = open("inputs")
@@ -22,7 +21,7 @@ n = random.randint(1, 2)
 #If the n == 1, the program will request the first page, which has 30 landscape images in it.
 #If the n == 2, the program will request the second page which has 21 landscape images in it.
 # You should use your UNSPLASH API key in the "?client_id = {YOUR-UNSPLASH-API-KEY}" section.
-unsplash_api_key = api_key.my_key
+unsplash_api_key = os.get_env('UNSPLASH_API_KEY')
 response = requests.get(f"https://api.unsplash.com/collections/1977302/photos/?client_id={unsplash_api_key}&per_page=30&page={n}&orientation=landscape")
 
 image_json = response.json()
