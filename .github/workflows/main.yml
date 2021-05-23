@@ -27,6 +27,8 @@
           pip install textwrap3
           pip install requests
           pipenv install --dev --three
+        env:
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
       - name: Grade docs
         run: |
           cd docs
