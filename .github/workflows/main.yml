@@ -42,6 +42,10 @@
         run: |
           gradle grade
         if: always()
+      - name: Run python command
+        run: |
+          cd src
+          python3 main.py < inputs
         env:   
          PIPENV_VENV_IN_PROJECT: 1
          PIPENV_IGNORE_VIRTUALENVS: 1
