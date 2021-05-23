@@ -7,6 +7,8 @@
   jobs:
     grade:
       runs-on: ubuntu-latest
+      env:
+          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
       steps:
       - uses: actions/checkout@v2
         with: 
@@ -27,8 +29,6 @@
           pip install textwrap3
           pip install requests
           pipenv install --dev --three
-        env:
-          UNSPLASH_API_KEY: ${{ secrets.UNSPLASH_API_KEY }}
       - name: Grade docs
         run: |
           cd docs
