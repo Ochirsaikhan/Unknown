@@ -25,6 +25,7 @@
           pip install pillow
           pip install markovify
           pip install textwrap3
+          pip install requests
           pipenv install --dev --three
       - name: Grade docs
         run: |
