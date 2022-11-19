@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "unknown"
+version = "1.0.0"
+description = "Generate an interesting random quote image"
+authors = ["Ochirsaikhan"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+markovify = "^0.9.4"
+Pillow = "^9.3.0"
+requests = "^2.28.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
