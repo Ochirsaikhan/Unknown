@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "unknown"
 version = "1.0.0"
-description = "Generate an interesting random quote image"
+description = "Generate an interesting image with randomly generated quote"
 authors = ["Ochirsaikhan"]
 readme = "README.md"
 
