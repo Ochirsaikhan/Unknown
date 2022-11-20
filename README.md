@@ -1,5 +1,5 @@
 
-# Unknown: Quote Generation with Markov Chains
+# Unknown: Quote Generation with Markov Chain
 
 Unknown creates an image containing a random quote generated with Markov chains using the [Markovify](https://github.com/jsvine/markovify) Python library.
 The quote is generated based on large corpora of famous quotes, and the background image is pulled randomly from Unsplash using their API.
@@ -57,7 +57,3 @@ After running the program, you should have an image created in the "output" dire
 ## Lessons Learned
 
 As this was the first personal project I've worked on, I learned a lot when completing this project, from understanding what an API is and how to use them to reading documentation and figuring out how to implement features I want using an external library. But, most importantly, I learned that working on a challenging project that interests me can be an enjoyable experience, and I liked what I was able to build in the end.
-
-## Authors
-
-- [@Ochirsaikhan](https://www.github.com/Ochirsaikhan)
